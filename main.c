@@ -11,6 +11,7 @@ int main(){
     int temperature;
     float vibration;
     const int K = (1 % 7) + 1;
+
     // validate the menu loop
     do {
         // show menu
