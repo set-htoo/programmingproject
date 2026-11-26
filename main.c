@@ -16,7 +16,7 @@ int main(){
     // declare choice type from user
 
     // choice is what the user will choose in the menu, crit_count is the counter that increments when critical condition is reached.
-    int choice, crit_count, status;
+    int choice, crit_count, status, session_count;
     // status stores the status number of the machine. 1 for critical, 2 for warning, 3 for normal. this is used in displaying the statistics of the machine
 
     // declare input variables
@@ -96,7 +96,6 @@ int main(){
             } else {
                 printf("The machine is in a NORMAL condition.\n\n");
                 status = 3;
-                // loop this entire thing including the menu
             }
         
         
@@ -125,12 +124,12 @@ int main(){
                     printf("There are no recent sessions. Please start monitoring to record your first session.\n\n");
             }
 
-
+            printf("Total monitoring sessions: \n\n", session_count); 
 
             // display the counter of how many monitoring sessions??? ask robert!! (maybe it's ambiguous?)
 
         } else if(choice == 3){
-            // thresholds? maybe i have to show the boundaricleares like 0-150 and 0.0-50.0
+            // thresholds? maybe i have to show the boundaries like 0-150 and 0.0-50.0
             // mainly stuff like what triggers the critical/warning/normal conditions calculated with K
 
         } else if(choice == 4){
